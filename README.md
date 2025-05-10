@@ -1,7 +1,8 @@
 # Check-DML
 
+## Création des tables
+
 ```
-Création des tables
 -- Table des départements
 CREATE TABLE Departement (
     Num_S INT PRIMARY KEY,
@@ -47,7 +48,7 @@ Explication des contraintes
 - CHECK impose des restrictions sur les valeurs (ex. salaire positif, date de fin après date de début).
 - FOREIGN KEY établit les relations entre les tables et permet la suppression en cascade des enregistrements liés.
 
-Insertion des enregistrements
+## Insertion des enregistrements
 
 ```
 -- Insertion des départements
@@ -82,7 +83,7 @@ INSERT INTO Employe_Projet (Employee_Num_E, Project_Num_P, Role) VALUES
 
 ```
 
-Mise à jour du rôle de l'employé
+## Mise à jour du rôle de l'employé
 
 ```
 UPDATE Employe_Projet
@@ -90,7 +91,7 @@ SET Role = 'Développeur Full Stack'
 WHERE Employee_Num_E = 101;
 ```
 
-Suppression de l'employé et de ses entrées
+## Suppression de l'employé et de ses entrées
 
 ```
 DELETE FROM Employe_Projet WHERE Employee_Num_E = 103;
